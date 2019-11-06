@@ -211,7 +211,7 @@
             </div>
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2019 <a href="#">Gran Mision Saber y Trabajo</a>.
+                    &copy; 2019 <a href="#">Gobierno Bolivarino de Cojedes</a>.
                 </div>
                 <div class="version">
                     <b>Version: </b> 0.3

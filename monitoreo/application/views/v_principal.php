@@ -297,7 +297,7 @@ $agro_distrito      = count($agro_distrito );
                         <br>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <!--div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-cyan hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">person</i>
@@ -307,8 +307,8 @@ $agro_distrito      = count($agro_distrito );
                             <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                </div-->
+                <!--div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-light-green hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">person</i>
@@ -318,8 +318,8 @@ $agro_distrito      = count($agro_distrito );
                             <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                </div-->
+                <!--div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-orange hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">person</i>
@@ -329,8 +329,8 @@ $agro_distrito      = count($agro_distrito );
                             <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20"></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                </div-->
+                <!--div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-lime hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">person</i>
@@ -340,10 +340,8 @@ $agro_distrito      = count($agro_distrito );
                             <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20"></div>
                         </div>
                     </div>
-                </div>
+                </div-->
             </div>
-  
-
             <div class="row clearfix">
                 <!-- Task Info -->
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
@@ -373,7 +371,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_amazonas;?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_amazonas; ?></span></td>
                                         </tr>
@@ -396,7 +394,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -431,7 +429,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_anzoategui;?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_anzoategui; ?></span></td>
                                         </tr>
@@ -454,7 +452,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -489,7 +487,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_apure;?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_apure; ?></span></td>
                                         </tr>
@@ -512,7 +510,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -547,7 +545,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_aragua;?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_aragua; ?></span></td>
                                         </tr>
@@ -570,7 +568,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -606,7 +604,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_barinas?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_barinas; ?></span></td>
                                         </tr>
@@ -629,7 +627,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -665,7 +663,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_bolivar; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_bolivar; ?></span></td>
                                         </tr>
@@ -688,7 +686,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -724,7 +722,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_carabobo; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_carabobo; ?></span></td>
                                         </tr>
@@ -747,7 +745,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -783,7 +781,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_cojedes; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_cojedes; ?></span></td>
                                         </tr>
@@ -806,7 +804,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -842,7 +840,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_delta; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_delta; ?></span></td>
                                         </tr>
@@ -865,7 +863,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -901,7 +899,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_distrito; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_distrito; ?></span></td>
                                         </tr>
@@ -924,7 +922,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -960,7 +958,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_falcon; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_falcon; ?></span></td>
                                         </tr>
@@ -983,7 +981,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1019,7 +1017,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_guarico; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_guarico; ?></span></td>
                                         </tr>
@@ -1042,7 +1040,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1078,7 +1076,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_lara; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_lara; ?></span></td>
                                         </tr>
@@ -1101,7 +1099,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1137,7 +1135,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_merida; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_merida; ?></span></td>
                                         </tr>
@@ -1160,7 +1158,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1195,7 +1193,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_miranda; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_miranda; ?></span></td>
                                         </tr>
@@ -1218,7 +1216,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1254,7 +1252,7 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_monagas; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_monagas; ?></span></td>
                                         </tr>
@@ -1277,7 +1275,7 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1313,30 +1311,30 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_esparta; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_esparta; ?></span></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Plan Asesorate</td>
                                             <td><span ><?php  echo $asesorate_esparta; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Proyecto Ingenio</td>
                                             <td><span ><?php  echo $ingenio_esparta; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Brigadas Tecnicas</td>
                                             <td>
                                                 <span ><?php  echo $brigadas_esparta; ?></span>
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1372,30 +1370,30 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_portuguesa; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_portuguesa; ?></span></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Plan Asesorate</td>
                                             <td><span ><?php  echo $asesorate_portuguesa; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Proyecto Ingenio</td>
                                             <td><span ><?php  echo $ingenio_portuguesa; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Brigadas Tecnicas</td>
                                             <td>
                                                 <span ><?php  echo $brigadas_portuguesa; ?></span>
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1431,30 +1429,30 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_sucre; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_sucre; ?></span></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Plan Asesorate</td>
                                             <td><span ><?php  echo $asesorate_sucre; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Proyecto Ingenio</td>
                                             <td><span ><?php  echo $ingenio_sucre; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Brigadas Tecnicas</td>
                                             <td>
                                                 <span ><?php  echo $brigadas_sucre; ?></span>
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1490,30 +1488,30 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_sucre; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_sucre; ?></span></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Plan Asesorate</td>
                                             <td><span ><?php  echo $asesorate_sucre; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Proyecto Ingenio</td>
                                             <td><span ><?php  echo $ingenio_sucre; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Brigadas Tecnicas</td>
                                             <td>
                                                 <span ><?php  echo $brigadas_sucre; ?></span>
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1549,30 +1547,30 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_trujillo; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_trujillo; ?></span></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Plan Asesorate</td>
                                             <td><span ><?php  echo $asesorate_trujillo; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Proyecto Ingenio</td>
                                             <td><span ><?php  echo $ingenio_trujillo; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Brigadas Tecnicas</td>
                                             <td>
                                                 <span ><?php  echo $brigadas_trujillo; ?></span>
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1608,30 +1606,30 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_vargas; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_vargas; ?></span></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Plan Asesorate</td>
                                             <td><span ><?php  echo $asesorate_vargas; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Proyecto Ingenio</td>
                                             <td><span ><?php  echo $ingenio_vargas; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Brigadas Tecnicas</td>
                                             <td>
                                                 <span ><?php  echo $brigadas_vargas; ?></span>
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1667,30 +1665,30 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_yaracuy; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_yaracuy; ?></span></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Plan Asesorate</td>
                                             <td><span ><?php  echo $asesorate_yaracuy; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Proyecto Ingenio</td>
                                             <td><span ><?php  echo $ingenio_yaracuy; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Brigadas Tecnicas</td>
                                             <td>
                                                 <span ><?php  echo $brigadas_yaracuy; ?></span>
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
@@ -1726,30 +1724,30 @@ $agro_distrito      = count($agro_distrito );
                                             <td>Gestion Productiva</td>
                                             <td> <?php  echo $agro_zulia; ?></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Joven Emprendedor</td>
                                             <td><span ><?php  echo $emprende_zulia; ?></span></td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Plan Asesorate</td>
                                             <td><span ><?php  echo $asesorate_zulia; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Proyecto Ingenio</td>
                                             <td><span ><?php  echo $ingenio_zulia; ?></span></td>
                                             <td>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <!--tr>
                                             <td>Brigadas Tecnicas</td>
                                             <td>
                                                 <span ><?php  echo $brigadas_zulia; ?></span>
                                             </td>
                                             <td>
                                             </td>
-                                        </tr>
+                                        </tr-->
                                     </tbody>
                                 </table>
                             </div>
