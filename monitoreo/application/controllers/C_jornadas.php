@@ -24,10 +24,10 @@ class C_jornadas extends CI_Controller {
 			$this->load->view('layout/aside');
 			//$contar    = $this->m_listado->listado_total();
 	        $agro      = $this->m_listado->listado_agro();
-	        $asesorate = $this->m_listado->listado_asesorate();	
-	        $brigadas  = $this->m_listado->listado_brigadas();
-	        $emprende  = $this->m_listado->listado_emprende();
-	        $ingenio   = $this->m_listado->listado_ingenio();
+	        #$asesorate = $this->m_listado->listado_asesorate();	
+	        #$brigadas  = $this->m_listado->listado_brigadas();
+	        #$emprende  = $this->m_listado->listado_emprende();
+	        #$ingenio   = $this->m_listado->listado_ingenio();
 	        $genero_f   = $this->m_jornadas->genero_f();
 	        $genero_m   = $this->m_jornadas->genero_m();	
 			//$listar = $this->m_jornadas->getPersonas();

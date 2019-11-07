@@ -48,7 +48,7 @@ class m_agro extends CI_Model
                           }         
      }
 /****************************************************************************************************************************************************/     
-public function agro_amazonas(){
+/*public function agro_amazonas(){
   $this->db->query("SELECT count ('planes.planes')");
   $this->db->from('public.personas, public.planes_personas, public.planes, public.direccion, public.estados');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND planes_personas.key_id_personas = personas.id_persona AND
@@ -56,7 +56,7 @@ public function agro_amazonas(){
   $aragua = $this->db->get();
     return $aragua->result();
  }
-public function agro_anzoategui(){
+ public function agro_anzoategui(){
   $this->db->query("SELECT count ('planes.planes')");
   $this->db->from('public.personas, public.planes_personas, public.planes, public.direccion, public.estados');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND planes_personas.key_id_personas = personas.id_persona AND
@@ -103,8 +103,8 @@ public function agro_anzoategui(){
   planes.id_planes = planes_personas.key_id_planes AND direccion.estado = estados.id_estado AND planes.id_planes='1' and estados.id_estado='7'");
   $aragua = $this->db->get();
     return $aragua->result();
- }
-   public function agro_cojedes(){
+ }*/
+public function agro_cojedes(){
   $this->db->query("SELECT count ('planes.planes')");
   $this->db->from('public.personas, public.planes_personas, public.planes, public.direccion, public.estados');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND planes_personas.key_id_personas = personas.id_persona AND
@@ -112,7 +112,7 @@ public function agro_anzoategui(){
   $aragua = $this->db->get();
     return $aragua->result();
  }
-   public function agro_delta(){
+/*   public function agro_delta(){
   $this->db->query("SELECT count ('planes.planes')");
   $this->db->from('public.personas, public.planes_personas, public.planes, public.direccion, public.estados');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND planes_personas.key_id_personas = personas.id_persona AND
@@ -239,7 +239,7 @@ public function agro_anzoategui(){
   planes.id_planes = planes_personas.key_id_planes AND direccion.estado = estados.id_estado AND planes.id_planes='1' and estados.id_estado='24'");
   $aragua = $this->db->get();
     return $aragua->result();
- }
+ }*/
 
  
 public function listar_agro(){
@@ -291,7 +291,7 @@ $this->db->select(" planes.planes,
   direccion.estado = estados.id_estado AND
   direccion.municipio = municipios.id_municipio AND
   direccion.parroquia = parroquias.id_parroquia AND
-  direccion.id_persona_direccion = espacio_politico.id_persona_espacio AND planes.id_planes='1'");
+  direccion.id_persona_direccion = espacio_politico.id_persona_espacio AND planes.id_planes='1' and estados.id_estado='8'");
   $listado = $this->db->get();
     return $listado->result();
 

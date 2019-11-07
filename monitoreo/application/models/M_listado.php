@@ -42,7 +42,7 @@ public function listado_total(){
   planes.id_planes = planes_personas.key_id_planes AND planes.id_planes = '1'");
   $agro = $this->db->get();
     return $agro->result();
- }
+ }/*
   public function listado_asesorate(){
   $this->db->query("SELECT  count('planes.planes')");
   $this->db->from('public.personas, public.planes, public.planes_personas');
@@ -95,7 +95,7 @@ public function listado_anzoategui(){
   $amazonas = $this->db->get();
     return $amazonas->result();
  }
- public function listado_apure(){
+public function listado_apure(){
   $this->db->query("SELECT COUNT(*)");
   $this->db->from('public.personas, 
   public.direccion, 
@@ -105,7 +105,7 @@ public function listado_anzoategui(){
   $amazonas = $this->db->get();
     return $amazonas->result();
  }
- public function listado_aragua(){
+public function listado_aragua(){
   $this->db->query("SELECT COUNT(*)");
   $this->db->from('public.personas, 
   public.direccion, 
@@ -115,7 +115,7 @@ public function listado_anzoategui(){
   $aragua = $this->db->get();
     return $aragua->result();
  }
- public function listado_barinas(){
+public function listado_barinas(){
   $this->db->query("SELECT COUNT(*)");
   $this->db->from('public.personas, 
   public.direccion, 
@@ -125,7 +125,7 @@ public function listado_anzoategui(){
   $aragua = $this->db->get();
     return $aragua->result();
  }
-  public function listado_bolivar(){
+public function listado_bolivar(){
   $this->db->query("SELECT COUNT(*)");
   $this->db->from('public.personas, 
   public.direccion, 
@@ -135,7 +135,7 @@ public function listado_anzoategui(){
   $aragua = $this->db->get();
     return $aragua->result();
  }
-  public function listado_carabobo(){
+public function listado_carabobo(){
   $this->db->query("SELECT COUNT(*)");
   $this->db->from('public.personas, 
   public.direccion, 
@@ -144,8 +144,8 @@ public function listado_anzoategui(){
   direccion.estado = estados.id_estado AND estados.id_estado='7'");
   $aragua = $this->db->get();
     return $aragua->result();
- }
-   public function listado_cojedes(){
+ }*/
+public function listado_cojedes(){
   $this->db->query("SELECT COUNT(*)");
   $this->db->from('public.personas, 
   public.direccion, 
@@ -154,7 +154,7 @@ public function listado_anzoategui(){
   direccion.estado = estados.id_estado AND estados.id_estado='8'");
   $aragua = $this->db->get();
     return $aragua->result();
- }
+ }/*
     public function listado_delta(){
   $this->db->query("SELECT COUNT(*)");
   $this->db->from('public.personas, 
@@ -312,6 +312,187 @@ public function listado_anzoategui(){
   public.estados');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND estados.id_estado='24'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }*/
+/************LISTADOS POR PARROQUIAS DE COJEDES ************/
+public function listado_parroquia_cojedes(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80101'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_juan(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80102'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_tinaquillo(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80201'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_baul(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80301'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_sucre(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80302'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_pao(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80401'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_libertad(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80501'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_amparo(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80502'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_carlos(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80601'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_angel(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80602'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_manuel(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80603'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_general(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80701'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_macapo(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80801'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_aguadita(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80802'");
+  $aragua = $this->db->get();
+    return $aragua->result();
+ }
+ public function listado_parroquia_romulo(){
+  $this->db->query("SELECT COUNT(*)");
+  $this->db->from('public.personas, 
+  public.direccion, 
+  public.estados,
+  public.municipios,
+  public.parroquias');
+  $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
+  direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80901'");
   $aragua = $this->db->get();
     return $aragua->result();
  }}

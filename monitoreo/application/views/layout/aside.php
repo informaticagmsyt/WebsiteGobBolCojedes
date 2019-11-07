@@ -72,7 +72,7 @@
                             
                         </ul>
                     </li>
-                     <li>
+                     <!--li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Programa Asesorate</span>
@@ -158,7 +158,7 @@
 
 
                         </ul>
-                    </li>
+                    </li-->
                     <?php if ($this->session->userdata('nivel_usuario') =='2' || $this->session->userdata('nivel_usuario')=='3' || $this->session->userdata('nivel_usuario')=='4' ) : ?>
                         <li>
                         <a href="javascript:void(0);" class="menu-toggle">

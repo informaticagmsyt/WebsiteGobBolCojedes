@@ -5,231 +5,246 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php  
   $contar = count($contar); 
   $agro   = count($agro); 
-  $asesorate = count($asesorate); 
-  $brigadas  = count($brigadas);
-  $emprende  = count($emprende); 
-  $ingenio   = count($ingenio); 
+  #$asesorate = count($asesorate); 
+  #$brigadas  = count($brigadas);
+  #$emprende  = count($emprende); 
+  #$ingenio   = count($ingenio); 
 ?>
 <!-------------------------------------------------------------------------------------------------------------------------->
 <?php
-$ama      = count($amazonas);
-$anzo     = count($anzoategui);
-$apure    = count($apure);
-$aragua   = count($aragua);
-$barinas  = count($barinas);
-$bolivar  = count($bolivar);
-$carabobo = count($carabobo);
+#$ama      = count($amazonas);
+#$anzo     = count($anzoategui);
+#$apure    = count($apure);
+#$aragua   = count($aragua);
+#$barinas  = count($barinas);
+#$bolivar  = count($bolivar);
+#$carabobo = count($carabobo);
 $cojedes  = count($cojedes);
-$delta    = count($delta);
-$distrito = count($distrito);
-$falcon   = count($falcon);
-$guarico  = count($guarico);
-$lara     = count($lara);
-$merida     = count($merida);
-$miranda    = count($miranda);
-$monagas    = count($monagas);
-$esparta    = count($esparta);
-$portuguesa = count($portuguesa);
-$sucre    = count($sucre);
-$tachira  = count($tachira);
-$trujillo = count($trujillo);
-$vargas   = count($vargas);
-$yaracuy  = count($yaracuy);
-$zulia    = count($zulia);
+#$delta    = count($delta);
+#$distrito = count($distrito);
+#$falcon   = count($falcon);
+#$guarico  = count($guarico);
+#$lara     = count($lara);
+#$merida     = count($merida);
+#$miranda    = count($miranda);
+#$monagas    = count($monagas);
+#$esparta    = count($esparta);
+#$portuguesa = count($portuguesa);
+#$sucre    = count($sucre);
+#$tachira  = count($tachira);
+#$trujillo = count($trujillo);
+#$vargas   = count($vargas);
+#$yaracuy  = count($yaracuy);
+#$zulia    = count($zulia);
+$paqcojedes = count($paqcojedes);
+$paqjuan = count($paqjuan);
+$paqtinaquillo = count($paqtinaquillo);
+$paqbaul = count($paqbaul);
+$paqsucre = count($paqsucre);
+$paqpao = count($paqpao);
+$paqlibertad = count($paqlibertad);
+$paqamparo = count($paqamparo);
+$paqcarlos = count($paqcarlos);
+$paqangel = count($paqangel);
+$paqmanuel = count($paqmanuel);
+$paqgeneral = count($paqgeneral);
+$paqmacapo = count($paqmacapo);
+$paqaguadita = count($paqaguadita);
+$paqromulo = count($paqromulo);
 ?>
 <!-------------------------------Amazonas---------------------------------------------------------------------------------->
-<?php
-$brigadas_amazonas  = count($brigadas_amazonas);
-$emprende_amazonas  = count($emprende_amazonas);
-$ingenio_amazonas   = count($ingenio_amazonas);
-$asesorate_amazonas = count($asesorate_amazonas);
-$agro_amazonas = count($agro_amazonas);
-?>
+    <?php
+    #$brigadas_amazonas  = count($brigadas_amazonas);
+    #$emprende_amazonas  = count($emprende_amazonas);
+    #$ingenio_amazonas   = count($ingenio_amazonas);
+    #$asesorate_amazonas = count($asesorate_amazonas);
+    #$agro_amazonas = count($agro_amazonas);
+    ?>
 <!--------------------------------Anzoategui-------------------------------------------------------------------------------->
-<?php
-$asesorate_anzoategui = count($asesorate_anzoategui);
-$ingenio_anzoategui   = count($ingenio_anzoategui);
-$emprende_anzoategui  = count($emprende_anzoategui);
-$agro_anzoategui      = count($agro_anzoategui);
-$brigadas_anzoategui  = count($brigadas_anzoategui);
+    <?php
+    #$asesorate_anzoategui = count($asesorate_anzoategui);
+    #$ingenio_anzoategui   = count($ingenio_anzoategui);
+    #$emprende_anzoategui  = count($emprende_anzoategui);
+    #$agro_anzoategui      = count($agro_anzoategui);
+    #$brigadas_anzoategui  = count($brigadas_anzoategui);
  ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Apure------------------------------------------------------------------------------------->
  <?php
-$brigadas_apure  = count($brigadas_apure);
-$asesorate_apure = count($asesorate_apure);
-$ingenio_apure   = count($ingenio_apure);
-$emprende_apure  = count($emprende_apure);
-$agro_apure      = count($agro_apure);
+    #$brigadas_apure  = count($brigadas_apure);
+    #$asesorate_apure = count($asesorate_apure);
+    #$ingenio_apure   = count($ingenio_apure);
+    #$emprende_apure  = count($emprende_apure);
+    #$agro_apure      = count($agro_apure);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Aragua------------------------------------------------------------------------------------>
   <?php
-$brigadas_aragua  = count($brigadas_aragua);
-$asesorate_aragua = count($asesorate_aragua);
-$ingenio_aragua   = count($ingenio_aragua);
-$emprende_aragua  = count($emprende_aragua);
-$agro_aragua      = count($agro_aragua);
+    #$brigadas_aragua  = count($brigadas_aragua);
+    #$asesorate_aragua = count($asesorate_aragua);
+    #$ingenio_aragua   = count($ingenio_aragua);
+    #$emprende_aragua  = count($emprende_aragua);
+    #$agro_aragua      = count($agro_aragua);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Barinas----------------------------------------------------------------------------------->
   <?php
-$brigadas_barinas  = count($brigadas_barinas);
-$asesorate_barinas = count($asesorate_barinas);
-$ingenio_barinas   = count($ingenio_barinas);
-$emprende_barinas  = count($emprende_barinas);
-$agro_barinas      = count($agro_barinas);
+    #$brigadas_barinas  = count($brigadas_barinas);
+    #$asesorate_barinas = count($asesorate_barinas);
+    #$ingenio_barinas   = count($ingenio_barinas);
+    #$emprende_barinas  = count($emprende_barinas);
+    #$agro_barinas      = count($agro_barinas);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Bolivar----------------------------------------------------------------------------------->
  <?php
-$brigadas_bolivar  = count($brigadas_bolivar);
-$asesorate_bolivar = count($asesorate_bolivar);
-$ingenio_bolivar   = count($ingenio_bolivar);
-$emprende_bolivar  = count($emprende_bolivar);
-$agro_bolivar      = count($agro_bolivar);
+    #$brigadas_bolivar  = count($brigadas_bolivar);
+    #$asesorate_bolivar = count($asesorate_bolivar);
+    #$ingenio_bolivar   = count($ingenio_bolivar);
+    #$emprende_bolivar  = count($emprende_bolivar);
+    #$agro_bolivar      = count($agro_bolivar);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Carabobo---------------------------------------------------------------------------------->
  <?php
-$brigadas_carabobo  = count($brigadas_carabobo);
-$asesorate_carabobo = count($asesorate_carabobo);
-$ingenio_carabobo   = count($ingenio_carabobo);
-$emprende_carabobo  = count($emprende_carabobo);
-$agro_carabobo      = count($agro_carabobo);
+    #$brigadas_carabobo  = count($brigadas_carabobo);
+    #$asesorate_carabobo = count($asesorate_carabobo);
+    #$ingenio_carabobo   = count($ingenio_carabobo);
+    #$emprende_carabobo  = count($emprende_carabobo);
+    #$agro_carabobo      = count($agro_carabobo);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Cojedes----------------------------------------------------------------------------------->
   <?php
-$brigadas_cojedes  = count($brigadas_cojedes);
-$asesorate_cojedes = count($asesorate_cojedes);
-$ingenio_cojedes   = count($ingenio_cojedes);
-$emprende_cojedes = count($emprende_cojedes);
+#$brigadas_cojedes  = count($brigadas_cojedes);
+#$asesorate_cojedes = count($asesorate_cojedes);
+#$ingenio_cojedes   = count($ingenio_cojedes);
+#$emprende_cojedes = count($emprende_cojedes);
 $agro_cojedes     = count($agro_cojedes);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Delta------------------------------------------------------------------------------------->
    <?php
-$brigadas_delta  = count($brigadas_delta );
-$asesorate_delta = count($asesorate_delta );
-$ingenio_delta   = count($ingenio_delta );
-$emprende_delta  = count($emprende_delta );
-$agro_delta      = count($agro_delta );
+    #$brigadas_delta  = count($brigadas_delta );
+    #$asesorate_delta = count($asesorate_delta );
+    #$ingenio_delta   = count($ingenio_delta );
+    #$emprende_delta  = count($emprende_delta );
+    #$agro_delta      = count($agro_delta );
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Distrito---------------------------------------------------------------------------------->
     <?php
-$brigadas_distrito  = count($brigadas_distrito );
-$asesorate_distrito = count($asesorate_distrito );
-$ingenio_distrito   = count($ingenio_distrito );
-$emprende_distrito  = count($emprende_distrito);
-$agro_distrito      = count($agro_distrito );
+    #$brigadas_distrito  = count($brigadas_distrito );
+    #$asesorate_distrito = count($asesorate_distrito );
+    #$ingenio_distrito   = count($ingenio_distrito );
+    #$emprende_distrito  = count($emprende_distrito);
+    #$agro_distrito      = count($agro_distrito );
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
-<?php
-	$brigadas_falcon  = count($brigadas_falcon );
-	$asesorate_falcon = count($asesorate_falcon );
-	$ingenio_falcon   = count($ingenio_falcon );
-	$emprende_falcon  = count($emprende_falcon);
-	$agro_falcon      = count($agro_falcon );
+<!--------------------------------Falcon------------------------------------------------------------------------------------>
+    <?php
+	#$brigadas_falcon  = count($brigadas_falcon );
+	#$asesorate_falcon = count($asesorate_falcon );
+	#$ingenio_falcon   = count($ingenio_falcon );
+	#$emprende_falcon  = count($emprende_falcon);
+	#$agro_falcon      = count($agro_falcon );
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Guarico----------------------------------------------------------------------------------->
  <?php
-	$brigadas_guarico  = count($brigadas_guarico );
-	$asesorate_guarico = count($asesorate_guarico );
-	$ingenio_guarico   = count($ingenio_guarico );
-	$emprende_guarico  = count($emprende_guarico);
-	$agro_guarico      = count($agro_guarico);
+	#$brigadas_guarico  = count($brigadas_guarico );
+	#$asesorate_guarico = count($asesorate_guarico );
+	#$ingenio_guarico   = count($ingenio_guarico );
+	#$emprende_guarico  = count($emprende_guarico);
+	#$agro_guarico      = count($agro_guarico);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Lara-------------------------------------------------------------------------------------->
   <?php
-	$brigadas_lara  = count($brigadas_lara );
-	$asesorate_lara = count($asesorate_lara );
-	$ingenio_lara   = count($ingenio_lara );
-	$emprende_lara  = count($emprende_lara);
-	$agro_lara      = count($agro_lara);
+	#$brigadas_lara  = count($brigadas_lara );
+	#$asesorate_lara = count($asesorate_lara );
+	#$ingenio_lara   = count($ingenio_lara );
+	#$emprende_lara  = count($emprende_lara);
+	#$agro_lara      = count($agro_lara);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Merida------------------------------------------------------------------------------------>
    <?php
-	$brigadas_merida  = count($brigadas_merida );
-	$asesorate_merida = count($asesorate_merida );
-	$ingenio_merida   = count($ingenio_merida);
-	$emprende_merida  = count($emprende_merida);
-	$agro_merida      = count($agro_merida);
+	#$brigadas_merida  = count($brigadas_merida );
+	#$asesorate_merida = count($asesorate_merida );
+	#$ingenio_merida   = count($ingenio_merida);
+	#$emprende_merida  = count($emprende_merida);
+	#$agro_merida      = count($agro_merida);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Miranda----------------------------------------------------------------------------------->
    <?php
-	$brigadas_miranda  = count($brigadas_miranda );
-	$asesorate_miranda = count($asesorate_miranda );
-	$ingenio_miranda   = count($ingenio_miranda);
-	$emprende_miranda  = count($emprende_miranda);
-	$agro_miranda      = count($agro_miranda);
+	#$brigadas_miranda  = count($brigadas_miranda );
+	#$asesorate_miranda = count($asesorate_miranda );
+	#$ingenio_miranda   = count($ingenio_miranda);
+	#$emprende_miranda  = count($emprende_miranda);
+	#$agro_miranda      = count($agro_miranda);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Monagas----------------------------------------------------------------------------------->
     <?php
-	$brigadas_monagas  = count($brigadas_monagas);
-	$asesorate_monagas = count($asesorate_monagas);
-	$ingenio_monagas   = count($ingenio_monagas);
-	$emprende_monagas  = count($emprende_monagas);
-	$agro_monagas      = count($agro_monagas);
+	#$brigadas_monagas  = count($brigadas_monagas);
+	#$asesorate_monagas = count($asesorate_monagas);
+	#$ingenio_monagas   = count($ingenio_monagas);
+	#$emprende_monagas  = count($emprende_monagas);
+	#$agro_monagas      = count($agro_monagas);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Esparta----------------------------------------------------------------------------------->
      <?php
-	$brigadas_esparta  = count($brigadas_esparta);
-	$asesorate_esparta = count($asesorate_esparta);
-	$ingenio_esparta   = count($ingenio_esparta);
-	$emprende_esparta  = count($emprende_esparta);
-	$agro_esparta      = count($agro_esparta);
+	#$brigadas_esparta  = count($brigadas_esparta);
+	#$asesorate_esparta = count($asesorate_esparta);
+	#$ingenio_esparta   = count($ingenio_esparta);
+	#$emprende_esparta  = count($emprende_esparta);
+	#$agro_esparta      = count($agro_esparta);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Portuguesa-------------------------------------------------------------------------------->
    <?php
-	$brigadas_portuguesa  = count($brigadas_portuguesa);
-	$asesorate_portuguesa = count($asesorate_portuguesa);
-	$ingenio_portuguesa   = count($ingenio_portuguesa);
-	$emprende_portuguesa  = count($emprende_portuguesa);
-	$agro_portuguesa      = count($agro_portuguesa);
+	#$brigadas_portuguesa  = count($brigadas_portuguesa);
+	#$asesorate_portuguesa = count($asesorate_portuguesa);
+	#$ingenio_portuguesa   = count($ingenio_portuguesa);
+	#$emprende_portuguesa  = count($emprende_portuguesa);
+	#$agro_portuguesa      = count($agro_portuguesa);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Sucre------------------------------------------------------------------------------------->
        <?php
-	$brigadas_sucre  = count($brigadas_sucre);
-	$asesorate_sucre = count($asesorate_sucre);
-	$ingenio_sucre   = count($ingenio_sucre);
-	$emprende_sucre  = count($emprende_sucre);
-	$agro_sucre      = count($agro_sucre);
+    #$brigadas_sucre  = count($brigadas_sucre);
+    #$asesorate_sucre = count($asesorate_sucre);
+    #$ingenio_sucre   = count($ingenio_sucre);
+    #$emprende_sucre  = count($emprende_sucre);
+    #$agro_sucre      = count($agro_sucre);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Tachira----------------------------------------------------------------------------------->
    <?php
-	$brigadas_tachira  = count($brigadas_tachira);
-	$asesorate_tachira = count($asesorate_tachira);
-	$ingenio_tachira   = count($ingenio_tachira);
-	$emprende_tachira  = count($emprende_tachira);
-	$agro_tachira      = count($agro_tachira);
+	#$brigadas_tachira  = count($brigadas_tachira);
+	#$asesorate_tachira = count($asesorate_tachira);
+	#$ingenio_tachira   = count($ingenio_tachira);
+	#$emprende_tachira  = count($emprende_tachira);
+	#$agro_tachira      = count($agro_tachira);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Trujillo---------------------------------------------------------------------------------->
    <?php
-	$brigadas_trujillo  = count($brigadas_trujillo);
-	$asesorate_trujillo = count($asesorate_trujillo);
-	$ingenio_trujillo   = count($ingenio_trujillo);
-	$emprende_trujillo  = count($emprende_trujillo);
-	$agro_trujillo      = count($agro_trujillo);
+	#$brigadas_trujillo  = count($brigadas_trujillo);
+	#$asesorate_trujillo = count($asesorate_trujillo);
+	#$ingenio_trujillo   = count($ingenio_trujillo);
+	#$emprende_trujillo  = count($emprende_trujillo);
+	#$agro_trujillo      = count($agro_trujillo);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Vargas------------------------------------------------------------------------------------>
     <?php
-	$brigadas_vargas  = count($brigadas_vargas);
-	$asesorate_vargas = count($asesorate_vargas);
-	$ingenio_vargas   = count($ingenio_vargas);
-	$emprende_vargas  = count($emprende_vargas);
-	$agro_vargas      = count($agro_vargas);
+	#$brigadas_vargas  = count($brigadas_vargas);
+	#$asesorate_vargas = count($asesorate_vargas);
+	#$ingenio_vargas   = count($ingenio_vargas);
+	#$emprende_vargas  = count($emprende_vargas);
+	#$agro_vargas      = count($agro_vargas);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Yaracuy----------------------------------------------------------------------------------->
      <?php
-	$brigadas_yaracuy  = count($brigadas_yaracuy);
-	$asesorate_yaracuy = count($asesorate_yaracuy);
-	$ingenio_yaracuy   = count($ingenio_yaracuy);
-	$emprende_yaracuy  = count($emprende_yaracuy);
-	$agro_yaracuy      = count($agro_yaracuy);
+	#$brigadas_yaracuy  = count($brigadas_yaracuy);
+	#$asesorate_yaracuy = count($asesorate_yaracuy);
+	#$ingenio_yaracuy   = count($ingenio_yaracuy);
+	#$emprende_yaracuy  = count($emprende_yaracuy);
+	#$agro_yaracuy      = count($agro_yaracuy);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------Zulia------------------------------------------------------------------------------------->
       <?php
-	$brigadas_zulia  = count($brigadas_zulia);
-	$asesorate_zulia = count($asesorate_zulia);
-	$ingenio_zulia   = count($ingenio_zulia);
-	$emprende_zulia  = count($emprende_zulia);
-	$agro_zulia      = count($agro_zulia);
+	#$brigadas_zulia  = count($brigadas_zulia);
+	#$asesorate_zulia = count($asesorate_zulia);
+	#$ingenio_zulia   = count($ingenio_zulia);
+	#$emprende_zulia  = count($emprende_zulia);
+	#$agro_zulia      = count($agro_zulia);
   ?>
- <!-------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------->
  <body class="theme-red">
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
@@ -279,7 +294,7 @@ $agro_distrito      = count($agro_distrito );
                             <i class="material-icons">person</i>
                         </div>
                         <div class="content">
-                            <div class="text">TOTAL REGISTRADOS <b><?php echo $contar;?></b></div>
+                            <div class="text">TOTAL REGISTRADOS <b><?php echo $agro_cojedes;?></b></div>
                             <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
                         </div>
                         <br>
@@ -291,7 +306,7 @@ $agro_distrito      = count($agro_distrito );
                             <i class="material-icons">person</i>
                         </div>
                         <div class="content">
-                            <div class="text">GESTION PRODUCTIVA  <b><?php echo $agro;?></b></div>
+                            <div class="text">GESTION PRODUCTIVA  <b><?php echo $agro_cojedes;?></b></div>
                             <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
                         </div>
                         <br>
@@ -347,12 +362,12 @@ $agro_distrito      = count($agro_distrito );
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Amazonas</h2>
+                            <h2>Parroquia Cojedes</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $ama;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqcojedes;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -369,7 +384,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_amazonas;?></td>
+                                            <td> <?php  echo $paqcojedes;?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -405,12 +420,12 @@ $agro_distrito      = count($agro_distrito );
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Anzoategui</h2>
+                            <h2>Parroquia Juan de Mata Suarez</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $anzo;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqjuan;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -427,7 +442,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_anzoategui;?></td>
+                                            <td> <?php  echo $paqjuan;?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -463,12 +478,12 @@ $agro_distrito      = count($agro_distrito );
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Apure</h2>
+                            <h2>Parroquia Tinaquillo</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $apure;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqtinaquillo;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -485,7 +500,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_apure;?></td>
+                                            <td> <?php  echo $paqtinaquillo;?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -521,12 +536,12 @@ $agro_distrito      = count($agro_distrito );
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Aragua</h2>
+                            <h2>Parroquia El Baúl</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $aragua;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqbaul;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -543,7 +558,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_aragua;?></td>
+                                            <td> <?php  echo $paqbaul;?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -576,16 +591,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Barinas</h2>
+                            <h2>Parroquia Sucre</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $barinas;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqsucre;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -602,7 +616,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_barinas?></td>
+                                            <td> <?php  echo $paqsucre;?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -635,16 +649,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Bolivar</h2>
+                            <h2>Parroquia El Pao</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $bolivar;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqpao;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -661,7 +674,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_bolivar; ?></td>
+                                            <td> <?php  echo $paqpao; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -694,16 +707,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Carabobo</h2>
+                            <h2>Parroquia Libertad de Cojedes</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $carabobo;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqlibertad;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -720,7 +732,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_carabobo; ?></td>
+                                            <td> <?php  echo $paqlibertad; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -753,16 +765,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Cojedes</h2>
+                            <h2>Parroquia El Amparo</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $cojedes;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqamparo;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -779,7 +790,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_cojedes; ?></td>
+                                            <td> <?php  echo $paqamparo; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -812,16 +823,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Delta Amacuro</h2>
+                            <h2>Parroquia San Carlos de Austria</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $delta;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqcarlos;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -838,7 +848,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_delta; ?></td>
+                                            <td> <?php  echo $paqcarlos; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -871,16 +881,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Distrito Capital</h2>
+                            <h2>Parroquia Juan Angel Bravo</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $distrito;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqangel;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -897,7 +906,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_distrito; ?></td>
+                                            <td> <?php  echo $paqangel; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -930,16 +939,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                 <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Falcón</h2>
+                            <h2>Parroquia Manuel Enrique</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $falcon;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqmanuel;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -956,7 +964,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_falcon; ?></td>
+                                            <td> <?php  echo $paqmanuel; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -989,16 +997,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                 <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Guárico</h2>
+                            <h2>Parroquia José Laurencio Silva</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $guarico;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqgeneral;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -1015,7 +1022,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_guarico; ?></td>
+                                            <td> <?php  echo $paqgeneral; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -1048,16 +1055,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Lara</h2>
+                            <h2>Parroquia Macapo    </h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $lara;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqmacapo;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -1074,7 +1080,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_lara; ?></td>
+                                            <td> <?php  echo $paqmacapo; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -1107,16 +1113,15 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Mérida</h2>
+                            <h2>Parroquia La Aguadita</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $merida;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqaguadita;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -1133,7 +1138,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_merida; ?></td>
+                                            <td> <?php  echo $paqaguadita; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -1169,12 +1174,12 @@ $agro_distrito      = count($agro_distrito );
                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
-                            <h2>Miranda</h2>
+                            <h2>Parroquia Rómulo Gallegos</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
 
                                     <ul class=" pull-right">
-                                        <li > <b><?php echo $miranda;?></b> <small > Registrados </small>    </li>
+                                        <li > <b><?php echo $paqromulo;?></b> <small > Registrados </small>    </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -1191,7 +1196,7 @@ $agro_distrito      = count($agro_distrito );
                                     <tbody>
                                         <tr>
                                             <td>Gestion Productiva</td>
-                                            <td> <?php  echo $agro_miranda; ?></td>
+                                            <td> <?php  echo $paqromulo; ?></td>
                                         </tr>
                                         <!--tr>
                                             <td>Joven Emprendedor</td>
@@ -1224,8 +1229,7 @@ $agro_distrito      = count($agro_distrito );
                     </div>
                 </div>
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
-                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                 <!--div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
                             <h2>Monagas</h2>
@@ -1275,16 +1279,15 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr-->
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
-                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                 <!--div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
                             <h2>Nueva Esparta</h2>
@@ -1334,16 +1337,15 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr-->
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
-                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                 <!--div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
                             <h2>Portuguesa</h2>
@@ -1393,16 +1395,15 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr-->
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
-                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                 <!--div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
                             <h2>Sucre</h2>
@@ -1452,16 +1453,15 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr-->
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- Browser Usage -->
-                 <!-- Browser Usage -->
-                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                 <!--div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
                             <h2>Táchira</h2>
@@ -1511,16 +1511,15 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr-->
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
-                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                 <!--div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
                             <h2>Trujillo</h2>
@@ -1570,16 +1569,15 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr-->
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
-                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                 <!--div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
                             <h2>Vargas</h2>
@@ -1629,16 +1627,15 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr-->
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
-                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                 <!--div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
                             <h2>Yaracuy</h2>
@@ -1688,16 +1685,15 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr-->
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- Browser Usage -->
-                <!-- Browser Usage -->
-                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                 <!--div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                     <div class="card">
                         <div class="header">
                             <h2>Zulia</h2>
@@ -1747,13 +1743,13 @@ $agro_distrito      = count($agro_distrito );
                                             </td>
                                             <td>
                                             </td>
-                                        </tr-->
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <!-- Browser Usage -->
                 <!-- #END# Browser Usage -->
             </div>
