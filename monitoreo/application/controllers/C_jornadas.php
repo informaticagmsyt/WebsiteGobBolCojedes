@@ -23,7 +23,8 @@ class C_jornadas extends CI_Controller {
 			$this->load->view('layout/navbar');
 			$this->load->view('layout/aside');
 			$contar    = $this->m_listado->listado_total();
-	        $agro      = $this->m_listado->listado_agro();
+			$agro      = $this->m_listado->listado_agro();
+			$agro_cojedes = $this->m_agro->agro_cojedes();
 	        #$asesorate = $this->m_listado->listado_asesorate();	
 	        #$brigadas  = $this->m_listado->listado_brigadas();
 	        #$emprende  = $this->m_listado->listado_emprende();
@@ -31,7 +32,7 @@ class C_jornadas extends CI_Controller {
 	        $genero_f   = $this->m_jornadas->genero_f();
 	        $genero_m   = $this->m_jornadas->genero_m();	
 			//$listar = $this->m_jornadas->getPersonas();
-			$this->load->view('v_jornadas',compact('agro',/*'asesorate','brigadas','emprende','ingenio',*/'genero_f','genero_m'));
+			$this->load->view('v_jornadas',compact('agro','agro_cojedes',/*'asesorate','brigadas','emprende','ingenio',*/'genero_f','genero_m'));
 			$this->load->view('layout/footer');
 		}
 
