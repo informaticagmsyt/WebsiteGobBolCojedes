@@ -39,7 +39,7 @@ public function listado_total(){
   $this->db->query("SELECT  count('planes.planes')");
   $this->db->from('public.personas, public.planes, public.planes_personas, public.estados');
   $this->db->where("personas.id_persona = planes_personas.key_id_personas AND
-  planes.id_planes = planes_personas.key_id_planes AND planes.id_planes = '1' and estados.id_estado='8'");
+  planes.id_planes = planes_personas.key_id_planes AND planes.id_planes = '1' AND estados.id_estado='8'");
   $agro = $this->db->get();
     return $agro->result();
  }/*

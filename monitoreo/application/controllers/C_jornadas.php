@@ -7,12 +7,12 @@ class C_jornadas extends CI_Controller {
             parent::__construct();
             $this->load->database();
             $this->load->Model('m_jornadas');
-            $this->load->Model('m_asesorate');
+            #$this->load->Model('m_asesorate');
             $this->load->Model('m_listado');
             $this->load->Model('m_agro');
-            $this->load->Model('m_brigadas');
-            $this->load->Model('m_ingenio');
-            $this->load->Model('m_emprende');
+            #$this->load->Model('m_brigadas');
+            #$this->load->Model('m_ingenio');
+            #$this->load->Model('m_emprende');
             if ($this->session->userdata('login') ==FALSE) {
             redirect(base_url('index.php/c_login'));
             }
