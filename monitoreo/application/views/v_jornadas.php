@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 <script type="text/javascript">
-    var uno = "<?php echo  $agro      = count($agro)?>";
+    var uno = "<?php echo  $agro      = count($agro_cojedes)?>";
     //var dos = "<?php #echo  $asesorate = count($asesorate)?>";
     //var tres = "<?php #echo  $brigadas = count($brigadas)?>";
     //var cuatro = "<?php #echo  $emprende  = count($emprende)?>";
@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </script>
   <script >
    
-     var nombres = ['Gestion Productiva'/*, 'Plan Asesorate', 'Brigadas Tecnicas', 'Joven Emprendedor', 'Proyecto Ingenio'*/,'total estado'];
+     var nombres = ['Gestion Productiva'/*, 'Plan Asesorate', 'Brigadas Tecnicas', 'Joven Emprendedor', 'Proyecto Ingenio'*/,'Total Estado'];
      var valores = [uno/*dos,tres,cuatro,cinco*/,seis];
      var generos = ['Mujeres', 'Hombres'];
      var sexo = [f,m];
