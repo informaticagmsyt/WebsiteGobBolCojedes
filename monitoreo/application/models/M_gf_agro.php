@@ -7,57 +7,93 @@ class M_gf_agro extends CI_Model
  /*********************************************************Grafica Genero******************************************************************/    
       public function genero_f(){
   $this->db->query("SELECT count ('*')");
-  $this->db->from('public.personas, public.planes_personas');
-  $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND  personas.sexo='F'");
+  $this->db->from('public.personas, public.estados, public.direccion, public.planes_personas, public.planes');
+  $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+  personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+  planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND 
+  planes.id_planes='1' AND sexo='F'");
   $aragua = $this->db->get();
     return $aragua->result();
  }
   public function genero_m(){
   $this->db->query("SELECT count ('*')");
-  $this->db->from('public.personas, public.planes_personas');
-  $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND  personas.sexo='M'");
+  $this->db->from('public.personas, public.estados, public.direccion, public.planes_personas, public.planes');
+  $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+  personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+  planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND 
+  planes.id_planes='1' AND sexo='M'");
   $aragua = $this->db->get();
     return $aragua->result();
  }   
 /************************************************************Graficas tipos de Aseramiento *************************************************/
 public function p_industrial(){
           $this->db->query("SELECT COUNT ('*')");
-      $this->db->from('public.planes_personas, 
-  public.solicitud');
-      $this->db->where(" solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND solicitud.t_asesoramiento='LEGAL' ");
+      $this->db->from('public.personas,
+      public.direccion,
+      public.planes,
+      public.estados,
+      public.planes_personas, 
+      public.solicitud');
+      $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND solicitud.t_asesoramiento='LEGAL' ");
         $aragua = $this->db->get();
         return $aragua->result();//" EN LA GRAFICA 3 CORRESPONDE A LEGAL
 }
   public function p_tecnologico(){
      $this->db->query("SELECT COUNT ('*')");
-      $this->db->from('public.planes_personas, 
-  public.solicitud');
-      $this->db->where(" solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='2' AND solicitud.t_asesoramiento='FORMACION' ");
+      $this->db->from('public.personas,
+      public.direccion,
+      public.planes,
+      public.estados,
+      public.planes_personas, 
+      public.solicitud');
+      $this->db->where(" personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='2' AND solicitud.t_asesoramiento='FORMACION' ");
         $aragua = $this->db->get();
         return $aragua->result();//" EN LA GRAFICA 3 CORRESPONDE A FORMACION
  }
  public function p_alimenticio(){
      $this->db->query("SELECT COUNT ('*')");
-      $this->db->from('public.planes_personas, 
-  public.solicitud');
-      $this->db->where(" solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND solicitud.t_asesoramiento='TECNICA' ");
+      $this->db->from('public.personas,
+      public.direccion,
+      public.planes,
+      public.estados,
+      public.planes_personas, 
+      public.solicitud');
+      $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND solicitud.t_asesoramiento='TECNICA' ");
         $aragua = $this->db->get();
         return $aragua->result();//" EN LA GRAFICA 3 CORRESPONDE A TECNICA ADMISNISTRATIVA
  }
 
   public function p_administrativo(){
         $this->db->query("SELECT COUNT ('*')");
-      $this->db->from('public.planes_personas, 
-  public.solicitud');
-      $this->db->where(" solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND solicitud.t_asesoramiento='ADMISNISTRATIVA' ");
+      $this->db->from('public.personas,
+      public.direccion,
+      public.planes,
+      public.estados,
+      public.planes_personas, 
+      public.solicitud');
+      $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND solicitud.t_asesoramiento='ADMISNISTRATIVA' ");
         $aragua = $this->db->get();
         return $aragua->result();
  }
  public function p_atomotriz(){
          $this->db->query("SELECT COUNT ('*')");
-      $this->db->from('public.planes_personas, 
-  public.solicitud');
-      $this->db->where(" solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND solicitud.t_asesoramiento='OTROS' ");
+      $this->db->from('public.personas,
+      public.direccion,
+      public.planes,
+      public.estados,
+      public.planes_personas, 
+      public.solicitud');
+      $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND solicitud.id_persona_solicitud = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND solicitud.t_asesoramiento='OTROS' ");
         $aragua = $this->db->get();
         return $aragua->result();
  }
@@ -100,15 +136,19 @@ public function p_industrial(){
 /*******************************************************************************************************************************************/
 public function lista_personal(){
       $this->db->query("SELECT COUNT ('*')");
-      $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'PERSONAL' AND planes_personas.key_id_planes='1'");
+      $this->db->from('public.personas, public.direccion, public.estados, public.planes, public.planes_personas, public.figura_juridica');
+      $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'PERSONAL' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
  }
  public function lista_upf(){
   $this->db->query("SELECT COUNT ('*')");
-      $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'UPF' AND planes_personas.key_id_planes='1'");
+      $this->db->from('public.personas, public.direccion, public.estados, public.planes, public.planes_personas, public.figura_juridica');
+      $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'UPF' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
   $aragua = $this->db->get();
@@ -116,15 +156,19 @@ public function lista_personal(){
  }
 public function lista_eps(){
   $this->db->query("SELECT COUNT ('*')");
-      $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'EPS' AND planes_personas.key_id_planes='1'");
+      $this->db->from('public.personas, public.direccion, public.estados, public.planes, public.planes_personas, public.figura_juridica');
+      $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'EPS' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
  }
  public function lista_coop(){
   $this->db->query("SELECT COUNT ('*')");
-      $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'COOPERATIVA' AND planes_personas.key_id_planes='1'");
+      $this->db->from('public.personas, public.direccion, public.estados, public.planes, public.planes_personas, public.figura_juridica');
+      $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'COOPERATIVA' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
   $aragua = $this->db->get();
@@ -132,8 +176,10 @@ public function lista_eps(){
  }
  public function lista_ca(){
   $this->db->query("SELECT COUNT ('*')");
-      $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'COMPAÑIA ANONIMA' AND planes_personas.key_id_planes='1'");
+      $this->db->from('public.personas, public.direccion, public.estados, public.planes, public.planes_personas, public.figura_juridica');
+      $this->db->where("personas.id_persona = planes_personas.key_id_personas AND planes_personas.key_id_planes='1' AND 
+      personas.id_persona = direccion.id_persona_direccion AND direccion.estado = estados.id_estado AND estados.id_estado='8' AND 
+      planes_personas.key_id_personas = personas.id_persona AND planes.id_planes = planes_personas.key_id_planes AND planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'COMPAÑIA ANONIMA' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
  }

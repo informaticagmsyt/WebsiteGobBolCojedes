@@ -49,13 +49,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     var valor = [industrial,tecnologico,p_alimenticio,administrativo,p_atomotriz];
 /************************************************************************************************************************************/     
 </script>
-  <section class="content">
+<section class="content">
     <div class="block-header">
                 <h2>Graficas Estadisticas del Programa de  Acompañamiento a la Gestion Productiva</h2>
             </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
                         <div class="body bg-white">
                             
@@ -101,9 +101,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </script>
                         </div>
                     </div>
-
-                </div>
-                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                </div>    
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
                         <div class="body bg-white">
                             
@@ -149,9 +148,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </script>
                         </div>
                     </div>
-                    
                 </div>
-                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            </div>
+            <div class='row'>    
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
                         <div class="body bg-white">
                             
@@ -163,7 +163,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 data: {
                                     labels: proyectos ,
                                     datasets: [{
-                                        label: ' Grafico N° 3 Tipo de Acompañamiento',
+                                        label: ' Grafico N° 3 Tipo de Asesoramiento',
                                         data: valor,
                                         backgroundColor: [
                                             'rgba(255, 99, 132, 0.5)',
@@ -197,13 +197,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </script>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             <!-- #END# No Header Card -->
         </div>
-    </section>
-    <section class="content">
+</section>
+    <!--section class="content">
         <div class="container-fluid">
           <div class="row clearfix">
                 <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
@@ -212,4 +211,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             </div>
         </div>
-    </section>
+    </section-->

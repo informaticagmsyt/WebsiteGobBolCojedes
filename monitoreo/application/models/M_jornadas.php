@@ -17,7 +17,7 @@ class m_jornadas  extends CI_Model
   planes.id_planes = planes_personas.key_id_planes AND planes.id_planes='1' AND sexo='F'");
   $aragua = $this->db->get();
     return $aragua->result();
- }
+ }  
   public function genero_m(){
   $this->db->query("SELECT count ('sexo')");
   $this->db->from('personas, estados, direccion, planes_personas, planes');
