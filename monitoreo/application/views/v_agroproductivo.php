@@ -41,6 +41,77 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </li>
                             </ul>
                         </div>
+                        <hr>
+
+                        <form action="" method="get">
+                            <div class="row">
+                        
+                        
+                                <div class="col-md-2">
+                                    <div class="block-header">
+                                        <br>
+                                        <h2><center>BUSCAR POR FECHA</center></h2>
+                                    </div>
+                        
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group form-line">
+                                        <label> Desde</label>
+                        
+                        
+                        
+                                        <div class="input-group date form_date col-md-8" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">date_range</i>
+                                            </span>
+                        
+                                            <input class="form-control" size="5" type="text" id="desde" name="desde" value="<?php 	if(isset($_REQUEST['desde'] )) echo $_REQUEST['desde']  ?>">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span><i class="far fa-trash-alt"></i></span>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span><i class="far fa-calendar-alt"></i></span>
+                                        </div>
+                        
+                        
+                        
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-3">
+                                    <div class="form-group form-line">
+                                        <label> Hasta</label>
+                        
+                        
+                        
+                                        <div class="input-group date form_date col-md-8" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">date_range</i>
+                                            </span>
+                        
+                                            <input class="form-control" size="5" type="text" id="desde" name="hasta" value="<?php 	if(isset($_REQUEST['hasta'] )) echo $_REQUEST['hasta']  ?>">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span><i class="far fa-trash-alt"></i></span>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span><i class="far fa-calendar-alt"></i></span>
+                                        </div>
+                        
+                        
+                        
+                                    </div>
+                                </div>
+                        
+                                <input type="hidden" name="id" value="1">
+                        
+                                <div class="col-md-3">
+                                    <div class="input-group">
+                        
+                                        <br>
+                                        <button type="submit" class="btn-sm btn-primary "> Buscar</i></button>
+                        
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        
+                        </form>
+                        
+                        <hr>
                         <div class="body">
                             <div class="table-responsive">
                                 <table class="table table-bordered table-striped table-hover dataTable js-exportable">

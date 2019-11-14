@@ -284,7 +284,7 @@ $agro_cojedes     = count($agro_cojedes);
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>DASHBOARD</h2>
+                <h2>TABLERO</h2>
             </div>
             <!-- Widgets -->
             <div class="row clearfix">
@@ -357,6 +357,77 @@ $agro_cojedes     = count($agro_cojedes);
                     </div>
                 </div-->
             </div>
+            <hr>
+
+            <form action="" method="get">
+                <div class="row">
+
+
+                    <div class="col-md-2">
+                        <div class="block-header">
+                            <br>
+                            <h2><center>BUSCAR POR FECHA</center></h2>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group form-line">
+                            <label> Desde</label>
+    
+    
+    
+                            <div class="input-group date form_date col-md-8" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <span class="input-group-addon">
+                                    <i class="material-icons">date_range</i>
+                                </span>
+    
+                                <input class="form-control" size="5" type="text" id="desde" name="desde" value="<?php 	if(isset($_REQUEST['desde'] )) echo $_REQUEST['desde']  ?>">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span><i class="far fa-trash-alt"></i></span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span><i class="far fa-calendar-alt"></i></span>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="form-group form-line">
+                            <label> Hasta</label>
+    
+    
+    
+                            <div class="input-group date form_date col-md-8" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                <span class="input-group-addon">
+                                    <i class="material-icons">date_range</i>
+                                </span>
+    
+                                <input class="form-control" size="5" type="text" id="desde" name="hasta" value="<?php 	if(isset($_REQUEST['hasta'] )) echo $_REQUEST['hasta']  ?>">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span><i class="far fa-trash-alt"></i></span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span><i class="far fa-calendar-alt"></i></span>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+    
+                    <input type="hidden" name="id" value="1">
+    
+                    <div class="col-md-3">
+                        <div class="input-group">
+    
+                            <br>
+                            <button type="submit" class="btn-sm btn-primary "> Buscar</i></button>
+    
+                        </div>
+    
+                    </div>
+                </div>
+
+            </form>
+
+            <hr>
             <div class="row clearfix">
                 <!-- Task Info -->
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
