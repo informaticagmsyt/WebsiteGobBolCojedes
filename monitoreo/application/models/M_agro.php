@@ -1,8 +1,12 @@
 <?php
 class m_agro extends CI_Model
 {
+  public $desde;
+  public $hasta;
     function _construct(){
-        parent::__construct();  
+        parent::__construct();
+        $this->desde=null;
+        $this->hasta=null;  
     }   /*
  public function contar_proyectos(){
     $this->db->query("SELECT COUNT(*)");
@@ -12,6 +16,10 @@ class m_agro extends CI_Model
     return $paralizado->result();
 }
 */
+public function setDesdeHasta($desde, $hasta){
+  $this->desde=$desde;
+  $this->hasta=$hasta;
+}
    public function registrar($param,$param_1){
         $campos = array(
             'cedula'   => strtoupper($param['cedula']),
@@ -109,6 +117,12 @@ public function agro_cojedes(){
   $this->db->from('public.personas, public.planes_personas, public.planes, public.direccion, public.estados');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND planes_personas.key_id_personas = personas.id_persona AND
   planes.id_planes = planes_personas.key_id_planes AND direccion.estado = estados.id_estado AND planes.id_planes='1' and estados.id_estado='8'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -295,6 +309,71 @@ $this->db->select(" planes.planes,
   $listado = $this->db->get();
     return $listado->result();
 
-}
+}/*
+public function buscar($id){
+  $this->db->select(" planes.planes,
+  personas.id_persona,
+    planes.id_planes, 
+    personas.cedula, 
+    personas.nombre, 
+    personas.apellido, 
+    personas.sexo, 
+    personas.f_nacimiento, 
+    direccion.localidad, 
+    direccion.nombre_localidad, 
+    direccion.direccion_exacta, 
+    estados.id_estado, 
+    municipios.id_municipio, 
+    parroquias.id_parroquia, 
+    estados.estado, 
+    municipios.municipio, 
+    parroquias.parroquia, 
+    planes_personas.fecha_registro, 
+    espacio_politico.e_social, 
+    espacio_politico.n_social, 
+    espacio_politico.movimiento, 
+    planes.id_planes, 
+    contacto.telefono, 
+    contacto.email, 
+    figura_juridica.r_social, 
+    laboral.grado_instruccion, 
+    laboral.profesion_oficio, 
+    laboral.trabaja, 
+    solicitud.t_asesoramiento, 
+    solicitud.t_solicitud");
+    $this->db->from('public.personas, 
+    public.planes, 
+    public.planes_personas, 
+    public.direccion, 
+    public.estados, 
+    public.municipios, 
+    public.parroquias, 
+    public.espacio_politico, 
+    public.contacto, 
+    public.figura_juridica, 
+    public.laboral, 
+    public.solicitud');
+    $this->db->where( "personas.id_persona = planes_personas.key_id_personas AND
+    personas.id_persona = direccion.id_persona_direccion AND
+    personas.id_persona = contacto.id_persona_contacto AND
+    personas.id_persona = figura_juridica.id_persona_figura AND
+    personas.id_persona = laboral.id_persona_laboral AND
+    personas.id_persona = solicitud.id_persona_solicitud AND
+    planes.id_planes = planes_personas.key_id_planes AND
+    direccion.estado = estados.id_estado AND
+    direccion.municipio = municipios.id_municipio AND
+    direccion.parroquia = parroquias.id_parroquia AND
+    direccion.id_persona_direccion = espacio_politico.id_persona_espacio ");
+    $this->db->where('personas.id_persona',$id );
+    $listado = $this->db->get();
+      return $listado->result();
+  
+  }
+  public function getPlanes(){
+    $this->db->select("*");
+    $this->db->from('public.planes');
+    $listado = $this->db->get();
+      return $listado->result();
+  }*/
 }
 ?>

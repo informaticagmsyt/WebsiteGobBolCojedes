@@ -1,9 +1,17 @@
 <?php
 class m_listado extends CI_Model
 {
+  public $desde;
+  public $hasta;
     function _construct(){
-        parent::__construct();  
-    } 
+        parent::__construct();
+        $this->desde=false;
+        $this->hasta=false;  
+    }
+    public function setDesdeHasta($desde, $hasta){
+      $this->desde=$desde;
+      $this->hasta=$hasta;
+    }     
 public function get_estados(){
     $this->db->query("SELECT '*'");
     $this->db->from('estados');
@@ -40,6 +48,12 @@ public function listado_total(){
   $this->db->from('public.personas, public.planes, public.planes_personas, public.estados');
   $this->db->where("personas.id_persona = planes_personas.key_id_personas AND
   planes.id_planes = planes_personas.key_id_planes AND planes.id_planes = '1' AND estados.id_estado='8'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $agro = $this->db->get();
     return $agro->result();
  }/*
@@ -152,6 +166,12 @@ public function listado_cojedes(){
   public.estados');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND estados.id_estado='8'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }/*
@@ -325,6 +345,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80101'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -337,6 +363,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80102'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -349,6 +381,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80201'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -361,6 +399,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80301'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -373,6 +417,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80302'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -385,6 +435,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80401'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -397,6 +453,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80501'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -409,6 +471,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80502'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -421,6 +489,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80601'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -433,6 +507,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80602'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -445,6 +525,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80603'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -457,6 +543,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80701'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -469,6 +561,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80801'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -481,6 +579,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80802'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }
@@ -493,6 +597,12 @@ public function listado_parroquia_cojedes(){
   public.parroquias');
   $this->db->where("personas.id_persona = direccion.id_persona_direccion AND
   direccion.estado = estados.id_estado AND direccion.municipio = municipios.id_municipio AND direccion.parroquia = parroquias.id_parroquia AND parroquias.id_parroquia = '80901'");
+  if($this->desde && $this->hasta){
+     
+    $this->db->where('personas.f_creacion >=', $this->desde." 00:00:00");
+    $this->db->where('personas.f_creacion <=', $this->hasta." 23:59:00");
+ 
+   }
   $aragua = $this->db->get();
     return $aragua->result();
  }}

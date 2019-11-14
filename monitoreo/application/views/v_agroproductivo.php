@@ -140,7 +140,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                     <tbody>
                                                                 <?php
-                                    foreach ($listar as $listar) {
+                                    foreach ($listado as $listar) {
                                 ?>
                                   <tr>
                                         <th scope="row"><?php echo $listar->cedula;?></th>
@@ -161,6 +161,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <td><?php echo strtolower($listar->profesion_oficio);?></td>
                                         <td><?php echo strtolower($listar->trabaja);?></td>
                                         <td><?php echo strtolower($listar->planes);?></td>
+                                        <!--td><button id="btnEditar<?php echo $listar->id_persona ?>" onclick="ireditar('<?php echo $listar->id_persona ?>')" data-editable="false" data-id="<?php echo $listar->id_persona ?>" class="btn-sm btn-primary btnEditar"> <i class="material-icons" id="icon<?php echo $listar->id_persona ?>">create</i></button>
+                                            <button id="btnEliminar<?php echo $listar->id_persona ?>" onclick="eliminar('<?php echo $listar->id_persona ?>')" data-editable="false" data-id="<?php echo $listar->id_persona ?>" class="btn-sm btn-danger btnEditar"> <i class="material-icons" id="icon<?php echo $listar->id_persona ?>">delete</i></button> </td-->
                                     
                                 <?php
                                 }
@@ -175,3 +177,74 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
     </section>
+    <script src="<?= base_url() ?>public/plugins/jquery/jquery.min.js"></script>
+
+    <script>
+        var urlBase = '<?= base_url() ?>'
+        var lista = '<?php echo json_encode($listado) ?>';
+
+
+        var dataasesorate = '';
+        //dataasesorate=JSON.parse(lista);
+
+        $(document).ready(function() {
+
+            $('.form_date').datetimepicker({
+                language: 'es',
+                weekStart: 1,
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                minView: 2,
+                forceParse: 0
+            });
+
+
+
+            var url = urlBase + "index.php/C_agroproductivo/agro";
+            $.ajax({
+                    method: "get",
+                    url: url,
+
+                })
+                .done(function(resp) {
+
+                    if (resp.length > 0)
+                        resp.forEach(element => {
+
+                            //  if(element.grado_instruccion.length != 0 || element.grado_instruccion.length != null)
+                            if (document.getElementById('grado' + element.id_persona)) {
+
+
+
+                                setValueSelect('grado' + element.id_persona, element.grado_instruccion.trim())
+                            }
+
+                            if (document.getElementById('sexo' + element.id_persona)) {
+                                // $(`#sexo${element.id_persona} select`).val(element.sexo);
+
+                                setValueSelect('sexo' + element.id_persona, element.sexo.trim())
+                            }
+
+                            if (document.getElementById('trabaja' + element.id_persona)) {
+                                //$(`#profesion${element.id_persona} select`).val(element.trabaja);
+
+
+                                setValueSelect('trabaja' + element.id_persona, element.trabaja.trim())
+                            }
+
+                        });
+
+                }).fail(function(error) {
+
+                    console.log(error)
+                });
+
+
+
+
+
+
+        });
+    </script>
