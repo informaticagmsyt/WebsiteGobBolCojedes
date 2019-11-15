@@ -44,6 +44,10 @@
     <script src="<?= base_url()?>public/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
     <!-- noUISlider Plugin Js -->
     <script src="<?= base_url()?>public/plugins/nouislider/nouislider.js"></script>
+    <!-- Bootstrap Datatime JS -->
+    <script src="<?= base_url()?>public/js/bootstrap-datetimepicker.js"></script>
+    <script src="<?= base_url()?>public/js/bootstrap-datetimepicker.es.js"></script>
+    <script src="<?= base_url()?>public/js/script.js"></script>
   <!------------------------------------------------------------------------------------------------------>
 
 </html>
