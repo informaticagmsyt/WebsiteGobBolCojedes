@@ -1,5 +1,5 @@
-<body class="#03A9F4
-bg-light-blue">
+<body class="#FFC107
+bg-amber">
 	
 <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
 	<section>
